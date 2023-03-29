@@ -1,18 +1,15 @@
 function isPalindrome(word){
 
-  if (typeof word !== "string") {
-    return "Please provide a string as an argument."}
- 
-   word = word.toLowerCase() 
-
-  for (let i = 0; i < word.length/2; i++){
+    word = word.toLowerCase() 
+   
+   for (let i = 0; i < word.length/2; i++){
     if (word[i] !== word[word.length -1 -i]) {
       return false;
     }
   }
   return true;
 }
-isPalindrome()
+
 
 /* 
   Add your pseudocode here
